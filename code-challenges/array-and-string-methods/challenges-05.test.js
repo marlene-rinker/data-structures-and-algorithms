@@ -37,7 +37,15 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templateWithJQuery = () => {
-  // Solution code here...
+  starWarsPeople.forEach(people => {
+    const template = $('#template').html();
+    const $swPeeps = $('<section></section>');
+    $swPeeps.html(template);
+    $swPeeps.find('h2').text(people.name);
+    $swPeeps.find('h3').text(people.height);
+    $swPeeps.find('p').text(people.eye_color);
+    $('main').append($swPeeps);
+  })
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +63,9 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  // Solution code here...
+  for (let i = 0; i < str.length + 1; i++) {
+    result.push(str.slice(i));
+  }
   return result;
 };
 
@@ -67,9 +77,7 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  // Solution code here...
-};
+const wordsToCharList = (arr) => arr.split('');
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -113,9 +121,18 @@ const gruffaloCrumble = {
 };
 
 
+
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(value => {
+    let space;
+    let item;
+    space = value.indexOf(" ");
+    item = value.slice(space+1);
+    space = item.indexOf(" ");
+    item = item.slice(space+1);
+    result.push(item);
+  })
   return result;
 };
 
