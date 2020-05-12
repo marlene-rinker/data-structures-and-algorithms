@@ -130,24 +130,17 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  arr.forEach(obj => {
-    // find the character in the array
-    // check to see if the character has children
-    const values = Object.values(obj);
-    values.forEach(value => {
-      if(value[0] === character){
-        if(value[2].length > 0){
-          return true;
-        }
-        return false;
+  let charArray = Object.values(arr);
+  let hasChildren = false;
+
+  charArray.forEach(char => {
+    if(char.name === character) {
+      if(char.children.length > 0){
+        hasChildren=true;
       }
-
-
-      // console.log(Object.values(obj));
-
-    });
-
+    }
   });
+  return hasChildren;
 };
 
 /* ------------------------------------------------------------------------------------------------
