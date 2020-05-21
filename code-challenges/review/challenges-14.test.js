@@ -19,8 +19,7 @@ const createServer = () => {
   app.delete('/things/1', (req, res) => {
     res.status(405).send();
   })
-
-
+  
   var server = app.listen(3000, function () {
     var port = server.address().port;
     console.log('Example app listening at port', port);
