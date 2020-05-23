@@ -50,7 +50,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  const regex = /^\d{4}$/g;
+  const regex = /^([a-zA-Z0-9]+)(\.[a-zA-Z0-9]+)?@([a-zA-Z0-9_\-]+)\.(com|net|org)$/gm;
   return regex.test(email);
 };
 
@@ -76,8 +76,7 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  const regex = /^\(?([0-9]{3})\)?([ -]?)([0-9]{3})([ -]?)([0-9]{4})$/;
-  // const regex = /^(\(([0-9]{3})\)|([0-9]{3}))([ -]?)([0-9]{3})([ -]?)([0-9]{4}$/;
+  const regex = /^([0-9]{3})?(\([0-9]{3}\))?([ -]?)([0-9]{3})([ -]?)([0-9]{4})$/gm;
   return regex.test(phoneNumber);
 };
 
@@ -127,7 +126,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should match a basic email', () => {
     expect(validateEmail('joe@codefellows.com')).toBeTruthy();
   });
@@ -144,7 +143,7 @@ xdescribe('Testing challenge 3', () => {
     expect(validateEmail('joe.schmoe@codefellows.net')).toBeTruthy();
   });
 
-  xtest('It should fail things that aren\'t email addresses', () => {
+  test('It should fail things that aren\'t email addresses', () => {
     expect(validateEmail('justastring')).toBeFalsy();
     expect(validateEmail('missing@adomain')).toBeFalsy();
     expect(validateEmail('@noname.com')).toBeFalsy();
@@ -157,7 +156,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should match the acceptable phone number formats', () => {
     expect(validatePhoneNumber('(555) 555-5555')).toBeTruthy();
     expect(validatePhoneNumber('555 555-5555')).toBeTruthy();
