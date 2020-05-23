@@ -50,6 +50,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
+  // eslint-disable-next-line no-useless-escape
   const regex = /^([a-zA-Z0-9]+)(\.[a-zA-Z0-9]+)?@([a-zA-Z0-9_\-]+)\.(com|net|org)$/gm;
   return regex.test(email);
 };
@@ -76,7 +77,7 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  const regex = /^([0-9]{3})?(\([0-9]{3}\))?([ -]?)([0-9]{3})([ -]?)([0-9]{4})$/gm;
+  const regex = /^([0-9]{3}|\([0-9]{3}\))([ -]?)([0-9]{3})([ -]?)([0-9]{4})$/gm;
   return regex.test(phoneNumber);
 };
 
