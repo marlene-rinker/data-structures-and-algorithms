@@ -1,9 +1,17 @@
 'use strict';
 
+
 function insertShiftArray(arr, value) {
-  let result = [...arr];
-  let middle = Math.ceil(result.length/2);
-  result.splice(middle, 0, value);
+  let result = [];
+  let middle = Math.ceil(arr.length/2);
+  for (let i = 0; i < arr.length; i++){
+    if (i === middle){
+      result.push(value);
+      result.push(arr[i]);
+    } else { 
+    result.push(arr[i]);
+    }
+  }
   return result;
 }
 
