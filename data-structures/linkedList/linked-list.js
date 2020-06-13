@@ -58,11 +58,6 @@ class LinkedList {
   }
 }
 
-const myList = new LinkedList();
-myList.insert('Marlene');
-myList.insert('Dave');
-myList.insert(4);
-console.log(myList);
-console.log(myList.toString());
+
 
 module.exports = LinkedList;
