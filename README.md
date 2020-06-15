@@ -54,3 +54,23 @@ Created a Node class. Created a LinkedList class. The LinkedList class has three
 
 ## API
 `insert()` takes in a value and adds a new node with that value to the head of the list. `includes()` takes in a value and returns true if that value is in the list and false if it's not in the list. `toString()` returns a string that represents all of the values in the list.
+
+
+# Linked List Insertions
+Extend my LinkedList class to include append, insertBefore, and insertAfter functionality.
+
+## Challenge
+- Write the following methods for the Linked List class:
+
+  - .append(value) which adds a new node with the given value to the end of the list
+
+  - .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+
+  - .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+
+## Approach & Efficiency
+Added three methods to the LinkedList class: append(), insertBefore(), and insertAfter(). Created tests to verify the functionality. 
+
+## API
+`append()` takes in a value and adds a new node with that value to the end of the list. `includesBefore()` takes in a value and a new value. It adds a new node with the new value before the node with value. `includesAfter()` takes in a value and a new value. It adds a new node with the new value after the node with value.
