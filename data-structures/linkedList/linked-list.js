@@ -56,8 +56,68 @@ class LinkedList {
       console.error('Sorry, this error occurred: ' + err);
     }
   }
+  append(value) {
+    try {
+    // used codeburst.io for reference for this code
+    let newNode = new Node(value);
+    if(!this.head){
+      this.head = newNode;
+      return this.head;
+    }
+    let lastNode = this.head;
+    while(lastNode.next !== null){
+      lastNode = lastNode.next;
+    }
+    lastNode.next = newNode;
+    return this.head;
+    }
+    catch(err){
+      console.error('Sorry, this error occurred: ' + err);
+    }
+  }
+
+  
+
+  insertBefore(value, newValue) {
+    
+    let newNode = new Node(newValue);
+    let current = this.head;
+    if (this.head.value === value){
+      newNode.next = this.head;
+      this.head = newNode;
+      return this.head;
+    }
+    while(current.next) {
+      if (current.next.value === value){
+        newNode.next = current.next;
+        current.next = newNode;
+        return this.head;
+      }
+      current = current.next;     
+    }
+    return this.append(newValue);// if value doesn't exist, put the new node at the end since nothing to put it before
+
+  }
+
+    insertAfter(value, newValue) {
+    
+      let newNode = new Node(newValue);
+      let current = this.head;
+      
+      while(current) {
+        if (current.value === value){
+          newNode.next = current.next;
+          current.next = newNode;
+          return this.head;
+        }
+        current = current.next;     
+      }
+        
+      return this.insert(newValue);// if value doesn't exist, put the new node at the beginning of the list so it's before everything
+  
+    }
+    
+
 }
-
-
 
 module.exports = LinkedList;
