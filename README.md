@@ -73,4 +73,4 @@ Extend my LinkedList class to include append, insertBefore, and insertAfter func
 Added three methods to the LinkedList class: append(), insertBefore(), and insertAfter(). Created tests to verify the functionality. 
 
 ## API
-`append()` takes in a value and adds a new node with that value to the end of the list. `includesBefore()` takes in a value and a new value. It adds a new node with the new value before the node with value. `includesAfter()` takes in a value and a new value. It adds a new node with the new value after the node with value.
+`append()` takes in a value and adds a new node with that value to the end of the list. `includesBefore()` takes in a value and a new value. It adds a new node with the new value to the list before the node with value. `includesAfter()` takes in a value and a new value. It adds a new node with the new value to the list after the node with value.

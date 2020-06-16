@@ -112,9 +112,7 @@ class LinkedList {
         }
         current = current.next;     
       }
-      if (current.next) {
         
-      }
       return this.insert(newValue);// if value doesn't exist, put the new node at the beginning of the list so it's before everything
   
     }
