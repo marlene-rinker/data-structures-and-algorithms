@@ -74,3 +74,16 @@ Added three methods to the LinkedList class: append(), insertBefore(), and inser
 
 ## API
 `append()` takes in a value and adds a new node with that value to the end of the list. `includesBefore()` takes in a value and a new value. It adds a new node with the new value to the list before the node with value. `includesAfter()` takes in a value and a new value. It adds a new node with the new value to the list after the node with value.
+
+# Find k-th Value From End of Linked List 
+Extend my LinkedList class to find the value of the node that is a certain number (k) from the end of the linked list.
+
+## Challenge
+- Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+
+## Approach & Efficiency
+Added two methods to the LinkedList class: getListLength() and kthFromEnd(). Created tests to verify the functionality.
+
+## API
+`getListLength()` finds the length of the linked list. `kthFromEnd()` takes in a number (k) and returns the value at the kth from the end position of the linked list. 

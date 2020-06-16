@@ -113,6 +113,48 @@ describe('Testing linked list', () => {
     })
       
    });
+
+   describe('Testing find value at kth from end of linked list', () => {
+    
+    it ('Should log exception when k is greater than the length of the list', () => {
+      const myList = new LinkedList();
+      myList.insert(1);
+      myList.insert(2);
+      expect(myList.kthFromEnd(4)).toEqual('Exception: Invalid list position');
+    })
+
+    it ('Should log exception when k is equal to the length of the list', () => {
+      const myList = new LinkedList();
+      myList.insert(1);
+      myList.insert(2);
+      expect(myList.kthFromEnd(2)).toEqual('Exception: Invalid list position');
+    })
+
+    it ('Should log exception when k is not a positive integer', () => {
+      const myList = new LinkedList();
+      myList.insert(1);
+      myList.insert(2);
+      expect(myList.kthFromEnd(-2)).toEqual('Exception: Invalid list position');
+    })
+
+    it ('Should work when linked list is a size of 1', () => {
+      const myList = new LinkedList();
+      myList.insert(1);
+      expect(myList.kthFromEnd(2)).toEqual('Exception: Invalid list position');
+      expect(myList.kthFromEnd(0)).toEqual(1);
+    })
+
+    it ('Should work when k from end of list is in the middle of the list', () => {
+      const myList = new LinkedList();
+      myList.insert(1);
+      myList.insert(2);
+      myList.insert(3);
+      myList.insert(4);
+      myList.insert(5);
+      myList.insert(6);
+      expect(myList.kthFromEnd(3)).toEqual(4);
+    }) 
+   });
   
 
   

@@ -64,19 +64,17 @@ class LinkedList {
       this.head = newNode;
       return this.head;
     }
-    let lastNode = this.head;
-    while(lastNode.next !== null){
-      lastNode = lastNode.next;
+    let current = this.head;
+    while(current.next !== null){
+      current = current.next;
     }
-    lastNode.next = newNode;
+    current.next = newNode;
     return this.head;
     }
     catch(err){
       console.error('Sorry, this error occurred: ' + err);
     }
   }
-
-  
 
   insertBefore(value, newValue) {
     
@@ -99,25 +97,53 @@ class LinkedList {
 
   }
 
-    insertAfter(value, newValue) {
-    
-      let newNode = new Node(newValue);
-      let current = this.head;
-      
-      while(current) {
-        if (current.value === value){
-          newNode.next = current.next;
-          current.next = newNode;
-          return this.head;
-        }
-        current = current.next;     
-      }
-        
-      return this.insert(newValue);// if value doesn't exist, put the new node at the beginning of the list so it's before everything
+  insertAfter(value, newValue) {
   
-    }
+    let newNode = new Node(newValue);
+    let current = this.head;
     
+    while(current) {
+      if (current.value === value){
+        newNode.next = current.next;
+        current.next = newNode;
+        return this.head;
+      }
+      current = current.next;     
+    }
+      
+    return this.insert(newValue);// if value doesn't exist, put the new node at the beginning of the list so it's before everything
+
+  }
+
+  getListLength(){
+    let current = this.head;
+    let length = 0;
+    while(current){
+      length = length + 1; 
+      current = current.next; 
+    }
+    return length;
+  }
+  
+  kthFromEnd(k){
+    const listLength = this.getListLength();
+    const nodeToFind = listLength - k;
+    let current = this.head;
+    let counter = 0;
+    if (nodeToFind > 0){
+      while(current){
+        counter = counter + 1;
+        if (counter === nodeToFind){
+          return current.value;
+        }
+        current = current.next;
+      }
+    }
+    return 'Exception: Invalid list position';
+  }
 
 }
+
+
 
 module.exports = LinkedList;
