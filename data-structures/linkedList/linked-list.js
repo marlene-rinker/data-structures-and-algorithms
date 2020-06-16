@@ -118,20 +118,6 @@ class LinkedList {
     }
     
 
-
-
 }
-
-let myList = new LinkedList();
-// myList.insert('test entry');
-// myList.append('appended entry');
-myList.insert(5);
-myList.insert(10);
-myList.insert(20);
-myList.insertAfter(5,6);
-// myList.insertBefore(10, 2);
-// myList.insertBefore(20, 22);
-// myList.insertBefore(10, 6);
-console.log(myList);
 
 module.exports = LinkedList;

@@ -68,7 +68,6 @@ describe('Testing linked list', () => {
       const myList = new LinkedList();
       myList.insert('Initial Entry');
       myList.append('Appended Entry 1');
-      console.log('myList length ', myList.head.length);
       expect(myList.head.next).toEqual({ value: 'Appended Entry 1', next: null });
       myList.append('Appended Entry 2');
       expect(myList.head.next.next).toEqual({ value: 'Appended Entry 2', next: null });
