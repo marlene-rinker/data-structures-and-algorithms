@@ -109,7 +109,7 @@ Write a function called `mergeLists` which takes two linked lists as arguments. 
 ## Approach & Efficiency
 Added a function called mergeLists in a new file that requires my LinkedList class from the previous linked list challenges. Created tests to verify the functionality.
 
-`mergeLists()` takes in two linked lists, creates a new list, puts nodes alternately from the two lists into the new list.
+`mergeLists()` takes in two linked lists, creates a new list, puts nodes alternately from the two lists into the new list. I think this might be 0(1) since I'm re-assigning the pointers, not traversing through each list. It may be 0(n) since I have to do this for each node in each list.
 
 ## Whiteboard
-whiteboard goes here
+![whiteboard](/challenges/llMerge/ll-merge.jpg)
