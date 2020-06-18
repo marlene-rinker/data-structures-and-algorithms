@@ -52,8 +52,12 @@ Create a Node class that has properties for the value stored in the Node, and a 
 ## Approach & Efficiency
 Created a Node class. Created a LinkedList class. The LinkedList class has three methods: includes(), insert(), and toString(). Created tests to verify the functionality. 
 
-## API
-`insert()` takes in a value and adds a new node with that value to the head of the list. `includes()` takes in a value and returns true if that value is in the list and false if it's not in the list. `toString()` returns a string that represents all of the values in the list.
+`insert()` takes in a value and adds a new node with that value to the head of the list (O(1) efficiency). `includes()` takes in a value and returns true if that value is in the list and false if it's not in the list (O(n) efficiency). `toString()` returns a string that represents all of the values in the list (O(n) efficiency).
+
+## Whiteboard
+
+![whiteboard](/data-structures/linkedList/linked-list.jpg)
+
 
 
 # Linked List Insertions
@@ -72,8 +76,11 @@ Extend my LinkedList class to include append, insertBefore, and insertAfter func
 ## Approach & Efficiency
 Added three methods to the LinkedList class: append(), insertBefore(), and insertAfter(). Created tests to verify the functionality. 
 
-## API
-`append()` takes in a value and adds a new node with that value to the end of the list. `includesBefore()` takes in a value and a new value. It adds a new node with the new value to the list before the node with value. `includesAfter()` takes in a value and a new value. It adds a new node with the new value to the list after the node with value.
+`append()` takes in a value and adds a new node with that value to the end of the list (O(n) efficiency). `includesBefore()` takes in a value and a new value. It adds a new node with the new value to the list before the node with value (O(n) efficiency). `includesAfter()` takes in a value and a new value. It adds a new node with the new value to the list after the node with value (O(n) efficiency).
+
+## Whiteboard
+
+![whiteboard](/data-structures/linkedList/ll-insertions.jpg)
 
 # Find k-th Value From End of Linked List 
 Extend my LinkedList class to find the value of the node that is a certain number (k) from the end of the linked list.
@@ -85,8 +92,12 @@ Extend my LinkedList class to find the value of the node that is a certain numbe
 ## Approach & Efficiency
 Added two methods to the LinkedList class: getListLength() and kthFromEnd(). Created tests to verify the functionality.
 
-## API
-`getListLength()` finds the length of the linked list. `kthFromEnd()` takes in a number (k) and returns the value at the kth from the end position of the linked list. 
+`getListLength()` finds the length of the linked list (O(n) efficiency). `kthFromEnd()` takes in a number (k) and returns the value at the kth from the end position of the linked list (O(n) efficiency).
+
+
+## Whiteboard
+
+![whiteboard](/data-structures/linkedList/ll-kth-from-end.jpg)
 
 # Merge Lists 
 Write a function that takes in two linked lists and merges them into a zipped list.
@@ -98,5 +109,7 @@ Write a function called `mergeLists` which takes two linked lists as arguments. 
 ## Approach & Efficiency
 Added a function called mergeLists in a new file that requires my LinkedList class from the previous linked list challenges. Created tests to verify the functionality.
 
-## API
-`mergeLists()` takes in two linked lists, creates a new list, puts nodes alternately from the two lists into the new list. 
+`mergeLists()` takes in two linked lists, creates a new list, puts nodes alternately from the two lists into the new list.
+
+## Whiteboard
+whiteboard goes here
