@@ -113,3 +113,65 @@ Added a function called mergeLists in a new file that requires my LinkedList cla
 
 ## Whiteboard
 ![whiteboard](/challenges/llMerge/ll-merge.jpg)
+
+# Stacks and Queues
+Create a Node class. Create a Stack class. Create methods for the Stack class. Create a Queue class. Create methods for the Queue class.
+
+## Challenge
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+
+Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+
+- This object should be aware of a default empty value assigned to top when the stack is created.
+
+- Define a method called push which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+
+- Define a method called pop that does not take any argument, removes the node from the top of the stack, and returns the node’s value.
+
+  - Should raise exception when called on empty stack
+
+- Define a method called peek that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
+
+  - Should raise exception when called on empty stack
+
+- Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the stack is empty.
+
+Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+
+- This object should be aware of a default empty value assigned to front when the queue is created.
+
+- Define a method called enqueue which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
+
+- Define a method called dequeue that does not take any argument, removes the node from the front of the queue, and returns the node’s value.
+
+  - Should raise exception when called on empty queue
+
+- Define a method called peek that does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
+
+  - Should raise exception when called on empty queue
+
+- Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the queue is empty.
+
+Be sure to follow your languages best practices for naming conventions.
+
+
+## Approach & Efficiency
+Created a Node class. Created a Stack class. The Stack class has 4 methods. Created a Queue class. The Queue class has 4 methods. Created tests to verify the functionality. 
+
+**Stack Methods**
+
+`push()` takes in a value and adds a new node with that value to the top of the stack (O(1) efficiency). `pop()` removes the node from the top of the stack and returns that node's value (O(1) efficiency). `peek()` returns the value of the node at the top of the stack (O(1) efficiency). `isEmpty()` returns a boolean indicating if the stack is empty or not (O(1) efficiency).
+
+**Queue Methods**
+
+`enqueue()` takes in a value and adds a new node with that value to the back of the queue (O(1) efficiency). `dequeue()` removes the node from the front of the queue and returns that node's value (O(1) efficiency). `peek()` returns the value of the node at the front of the queue (O(1) efficiency). `isEmpty()` returns a boolean indicating if the queue is empty or not (O(1) efficiency).
+
+## Whiteboard
+
+Node and Stack
+
+![whiteboard - Stack](/data-structures/stacksAndQueues/stack.jpg)
+
+Queue
+
+![whiteboard - Queue](/data-structures/stacksAndQueues/queue.jpg)
