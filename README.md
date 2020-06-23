@@ -1,5 +1,7 @@
 # data-structures-and-algorithms
-[Queue with Stacks](/challenges.queueWithStacks/queue-with-stacks.md)
+[Queue with Stacks](/challenges/queueWithStacks/queue-with-stacks.md)
+
+[Fifo Animal Shelter](/challenges/fifoAnimalShelter/fifo-animal-shelter.md)
 
 
 # Reverse an Array 
