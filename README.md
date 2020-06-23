@@ -1,4 +1,5 @@
 # data-structures-and-algorithms
+[Queue with Stacks](/challenges.queueWithStacks/queue-with-stacks.md)
 
 
 # Reverse an Array 
