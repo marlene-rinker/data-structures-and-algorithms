@@ -26,6 +26,8 @@ class PseudoQueue {
   }
 }
 
+module.exports = PseudoQueue;
+
 let myQueue = new PseudoQueue();
 myQueue.enqueue(10);
 myQueue.enqueue(15);

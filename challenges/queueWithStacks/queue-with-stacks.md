@@ -11,9 +11,9 @@ The `Stack` instances have only `push`, `pop`, and `peek` methods. You should us
 
 
 ## Approach & Efficiency
-Added a function called mergeLists in a new file that requires my LinkedList class from the previous linked list challenges. Created tests to verify the functionality.
+Created a Stack class. The Stack class has 4 methods. Created a PseudoQueue class. The PseudoQueue class has 2 methods. Created tests to verify the functionality. 
 
-`mergeLists()` takes in two linked lists, creates a new list, puts nodes alternately from the two lists into the new list. I think this might be 0(1) since I'm re-assigning the pointers, not traversing through each list. It may be 0(n) since I have to do this for each node in each list.
+`enqueue()` takes in a value and pushes it to a stack (O(1) efficiency). `dequeue()` pops values from a stack and push them into a new stack so they're in the reverse order. Then it pops the value of the top off and returns it (0(1) efficiency).
 
 ## Whiteboard
 ![whiteboard](/queue-with-stacks.jpg)
