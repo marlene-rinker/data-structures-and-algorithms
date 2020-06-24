@@ -22,7 +22,8 @@ class AnimalShelter {
     if (this.animals[0] === undefined){
       return ('Shelter is empty');
     }
-    if (pref != 'dog' || 'cat'){
+    
+    if (pref !== 'dog' && pref !== 'cat'){
       luckyAnimal = this.animals[0];//animal that's been in the shelter the longest
       this.animals.splice(0, 1);
       return luckyAnimal;
@@ -32,7 +33,6 @@ class AnimalShelter {
       if (this.animals[i].type === pref) {
         luckyAnimal = this.animals[i];
         this.animals.splice(i, 1);
-        console.log(luckyAnimal);
         i++;
         break;
       }
