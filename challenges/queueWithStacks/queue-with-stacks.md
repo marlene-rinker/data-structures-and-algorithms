@@ -16,4 +16,4 @@ Created a Stack class. The Stack class has 4 methods. Created a PseudoQueue clas
 `enqueue()` takes in a value and pushes it to a stack (O(1) efficiency). `dequeue()` pops values from a stack and push them into a new stack so they're in the reverse order. Then it pops the value of the top off and returns it (0(1) efficiency).
 
 ## Whiteboard
-![whiteboard](/queue-with-stacks.jpg)
+![whiteboard](queue-with-stacks.jpg)
