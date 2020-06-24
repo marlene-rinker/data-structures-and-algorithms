@@ -23,7 +23,7 @@ Inside the multiBracketValidation function which takes in a string:
   - if the current character is a closing bracket, then pop from the stack and if the popped character is the matching starting bracket, then it's fine
   - at the end of the traversal, if an opening bracket is left in the stack, then the string isn't balanced.
 
-[Used this for reference but modified it](https://js-algorithms.tutorialhorizon.com/2015/11/16/justify-if-a-string-consists-of-valid-parentheses/)
+[Reference](https://js-algorithms.tutorialhorizon.com/2015/11/16/justify-if-a-string-consists-of-valid-parentheses/)
 
 ## Whiteboard
 ![whiteboard](multi-bracket-validation.jpg)
