@@ -5,6 +5,9 @@
 
 [Multi Bracket Validation](/challenges/multiBracketValidation/multi-bracket-validation.md)
 
+[Trees](/data-structures/tree/tree.md)
+
+
 
 
 # Reverse an Array 
