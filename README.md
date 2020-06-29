@@ -7,6 +7,8 @@
 
 [Trees](/data-structures/tree/tree.md)
 
+[Find Maximum Binary Tree](/data-structures/tree/find-maximum-binary-tree.md)
+
 
 
 

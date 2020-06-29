@@ -79,6 +79,29 @@ class BinaryTree {
       console.error('Sorry, this error occurred: ' + err);
     }
   }
+
+  findMaxValue(root, max) {
+
+    try {
+
+      if (root.value > max){
+        max = root.value;
+      }
+
+      if (root.left) {
+        max = this.findMaxValue(root.left, max);
+      }
+      if (root.right) {
+        max = this.findMaxValue(root.right, max);
+      }
+    
+      return max;
+            
+    }
+    catch(err){
+      console.error('Sorry, this error occurred: ' + err);
+    }
+  }
 }
 
 class BinarySearchTree {
@@ -151,6 +174,17 @@ class BinarySearchTree {
     }
   }
 }
+
+let tree = new BinaryTree();
+tree.root = new Node(-3);
+tree.root.left = new Node(-2);
+tree.root.right = new Node(-1);
+tree.root.left.left = new Node(4);
+tree.root.left.right = new Node(-15);
+tree.root.right.left = new Node(-6);
+tree.root.right.right = new Node(-2);
+console.log(tree.findMaxValue(tree.root, tree.root.value));
+
 
 module.exports = {
   Node,
