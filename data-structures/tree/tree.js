@@ -102,7 +102,35 @@ class BinaryTree {
       console.error('Sorry, this error occurred: ' + err);
     }
   }
+
+  traverseBreadthFirst() {
+    try {
+      let results = [];
+      let queue = [];
+      let current = this.root;
+
+      queue.push(current);
+      while (queue.length) {
+        current = queue.shift();
+        results.push(current.value);
+
+        if (current.left) {
+          queue.push(current.left);
+        }
+
+        if (current.right) {
+          queue.push(current.right);
+        }
+      };
+
+      return results;
+    }
+  catch(err){
+    console.error('Sorry, this error occurred: ' + err);
+    }
+  }
 }
+
 
 class BinarySearchTree {
   constructor() {
