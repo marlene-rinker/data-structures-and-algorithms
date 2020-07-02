@@ -11,6 +11,8 @@
 
 [Breadth First Traversal Binary Tree](/data-structures/tree/breadth-first-traversal.md)
 
+[FizzBuzz Tree](/challenges/fizzBuzzTree/fizz-buzz-tree.md)
+
 
 
 
