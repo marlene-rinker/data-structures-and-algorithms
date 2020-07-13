@@ -13,6 +13,8 @@
 
 [FizzBuzz Tree](/challenges/fizzBuzzTree/fizz-buzz-tree.md)
 
+[Insertion Sort](/challenges/insertionSort/BLOG.md)
+
 
 
 
