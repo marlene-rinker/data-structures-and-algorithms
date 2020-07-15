@@ -17,6 +17,8 @@
 
 [Merge Sort](/challenges/mergeSort/BLOG.md)
 
+[Quick Sort](/challenges/quickSort/BLOG.md)
+
 
 
 
