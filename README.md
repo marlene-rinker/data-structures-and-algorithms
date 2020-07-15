@@ -15,6 +15,8 @@
 
 [Insertion Sort](/challenges/insertionSort/BLOG.md)
 
+[Merge Sort](/challenges/mergeSort/BLOG.md)
+
 
 
 
