@@ -19,6 +19,8 @@
 
 [Quick Sort](/challenges/quickSort/BLOG.md)
 
+[Hashtable](/data-structures/hashtable/hashtable.md)
+
 
 
 
