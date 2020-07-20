@@ -21,6 +21,9 @@
 
 [Hashtable](/data-structures/hashtable/hashtable.md)
 
+[Repeated Word](/challenges/repeatedWord/repeated-word.md)
+
+
 
 
 
