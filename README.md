@@ -23,6 +23,8 @@
 
 [Repeated Word](/challenges/repeatedWord/repeated-word.md)
 
+[Tree Intersection](/challenges/treeIntersection/tree-intersection.md)
+
 
 
 
