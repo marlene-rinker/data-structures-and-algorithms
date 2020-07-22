@@ -18,7 +18,7 @@ Implement a LEFT JOIN for two Hashmaps.
 
 
 ## Approach & Efficiency
-Create a function that takes in two hashmaps. It goes through the first hashmap and gets each key and value. It searches for that key in the second hashmap. If there, it pushes the key, value from first hashmap, and value from second hashmap into an array. If not there, it pushes the key, value from first hashmap, and `null` into an array. It takes that array and pushes it into a results array that is returned by the function. This has a `O(n+m)` efficiency because it goes through two hashmaps.
+Create a function that takes in two hashmaps. It goes through the first hashmap and gets each key and value. It searches for that key in the second hashmap. If there, it pushes the key, value from first hashmap, and value from second hashmap into an array. If not there, it pushes the key, value from first hashmap, and `null` into an array. It takes that array and pushes it into a results array that is returned by the function. This has a `O(n)` efficiency because it goes through the whole first hashmap which is `O(n)`, but then just goes to the particular value in the second hashmap which is `O(1)`.
 
 
 ## Whiteboard
