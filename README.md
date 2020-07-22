@@ -25,6 +25,8 @@
 
 [Tree Intersection](/challenges/treeIntersection/tree-intersection.md)
 
+[Left Join](/challenges/leftJoin/left-join.md)
+
 
 
 
