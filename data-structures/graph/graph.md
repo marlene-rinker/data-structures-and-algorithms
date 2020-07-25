@@ -1,4 +1,4 @@
-# Hashtable
+# Graph
 Create a Graph class. Create four methods: `addNode`, `addEdge`, `getNodes`, `getNeighbors`, and `size`.
 
 ## Challenge
@@ -40,8 +40,10 @@ Size()
 
 
 ## Approach & Efficiency
-<!-- info goes here -->
+Created a Vertex class with a constructor. Created an Edge class with a constructor. Created a Graph class with a constructor and five methods. Created tests to verify the functionality. 
+
+In the Graph class, `addNode` takes in a value. It adds a new node to the graph with that value and returns the node. This has an efficiency of O(1). `addEdge` takes in two nodes and adds and edge between them. This has an efficiency of O(1). `getNeighbors` takes in node and returns a collection of edges for that node. This has an efficiency of O(1). `getNodes` returns all of the nodes in the graph in an array. This has an efficiency of O(n). `size` returns the number of nodes in the graph. This uses a built-in Map method. It seems like this would have an efficiency of O(n).
 
 
 ## Whiteboard
-<!-- ![whiteboard](hashtable.jpg) -->
+![whiteboard](graph.jpg)
