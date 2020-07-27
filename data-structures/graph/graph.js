@@ -61,7 +61,24 @@ class Graph {
   size() {
     return this.adjlist.size;
   }
+
+  
   
 }
 
 module.exports = Graph;
+
+const myGraph = new Graph();
+const one = myGraph.addNode(1);
+const two = myGraph.addNode(2);
+const four = myGraph.addNode(4);
+const six = myGraph.addNode(6);
+
+
+myGraph.addEdge(one, two);
+myGraph.addEdge(one, four);
+myGraph.addEdge(two, four);
+myGraph.addEdge(four, six);
+
+console.log(myGraph.size());
+console.log(myGraph.getNeighbors(one));
