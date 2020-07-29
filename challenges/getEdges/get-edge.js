@@ -10,7 +10,7 @@ function verifyTrip(trip, flights) {
     return [false, 0];
   }
 
-  console.log('trip', trip);
+  
   
   
   for (let i = 0; i < trip.length-1; i++) {
