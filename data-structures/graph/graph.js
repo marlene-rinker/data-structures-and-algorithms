@@ -31,13 +31,13 @@ class Graph {
 
 
 
-  addEdge(startVertex, endVertex) {
+  addEdge(startVertex, endVertex, weight=0) {
     if (!this.adjlist.has(startVertex) || !this.adjlist.has(endVertex)) {
       console.log('Invalid Vertices');
     }
 
     const edges = this.adjlist.get(startVertex);
-    edges.push(new Edge(endVertex, 0));
+    edges.push(new Edge(endVertex, weight));
   }
 
 
@@ -80,5 +80,5 @@ myGraph.addEdge(one, four);
 myGraph.addEdge(two, four);
 myGraph.addEdge(four, six);
 
-console.log(myGraph.size());
-console.log(myGraph.getNeighbors(one));
+// console.log(myGraph.size());
+// console.log(myGraph.getNeighbors(one));
